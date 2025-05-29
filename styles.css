@@ -1,0 +1,129 @@
+/* styles.css */
+/*INDEX.HTML STYLES*/
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+.site-header {
+  background-color: #8fbc8f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+
+.header-image {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+
+.main-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-content p {
+  margin-bottom: 15px;
+}
+
+
+.content-link {
+  color: #007bff; 
+  text-decoration: none;
+}
+
+.content-link:hover {
+  text-decoration: underline;
+}
+
+
+.site-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 0.8em;
+  color: #777;
+}
+
+
+.footer-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/*NEIGHBORHOOD.HTML STYLES*/
+/* Styles specific to the neighborhood.html page */
+
+/* Style the image gallery on the neighborhood walks page */
+.neighborhood-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Style individual images in the neighborhood gallery */
+.neighborhood-gallery-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* You can add more specific styles here if needed for other elements
+   unique to the neighborhood.html page */
+
+/* parks.html STYLES */
+.parks-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Style individual images in the parks gallery */
+.parks-gallery-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
