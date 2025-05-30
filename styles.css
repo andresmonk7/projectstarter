@@ -1,129 +1,138 @@
 /* styles.css */
-/*INDEX.HTML STYLES*/
 
 body {
-  font-family: sans-serif;
-  margin: 20px;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-
-.site-header {
-  background-color: #8fbc8f;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-  border-radius: 8px;
+header {
+    background-color: #8fbc8f; /* DarkSeaGreen */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
-
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+nav {
+    display: inline-block;
+    width: 80%;
 }
 
-.main-nav li {
-  display: inline;
-  margin-right: 15px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+/*
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+*/
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    margin-right: 15px;
 }
 
-.main-nav a:hover {
-  text-decoration: underline;
+nav a:hover {
+    text-decoration: underline;
 }
 
-
-.header-image {
-  width: 150px;
-  border-radius: 50%;
-  margin-top: 10px;
+nav > ul > li > img {
+    width: 10%;
+    vertical-align: middle;
 }
 
-
-.main-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+header h1 {
+    margin-top: 10px;
 }
 
-
-.main-content p {
-  margin-bottom: 15px;
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-.content-link {
-  color: #007bff; 
-  text-decoration: none;
+main p {
+    margin-bottom: 15px;
 }
 
-.content-link:hover {
-  text-decoration: underline;
+main a {
+    color: #007bff; /* Blue */
+    text-decoration: none;
 }
 
-
-.site-footer {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 0.8em;
-  color: #777;
+main a:hover {
+    text-decoration: underline;
 }
 
-
-.footer-link {
-  color: #007bff;
-  text-decoration: none;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
 }
 
-.footer-link:hover {
-  text-decoration: underline;
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/*NEIGHBORHOOD.HTML STYLES*/
-/* Styles specific to the neighborhood.html page */
-
-/* Style the image gallery on the neighborhood walks page */
-.neighborhood-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Style individual images in the neighborhood gallery */
-.neighborhood-gallery-image {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+.flex img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* You can add more specific styles here if needed for other elements
-   unique to the neighborhood.html page */
-
-/* parks.html STYLES */
-.parks-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #777;
 }
 
-/* Style individual images in the parks gallery */
-.parks-gallery-image {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
